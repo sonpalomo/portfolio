@@ -19,9 +19,12 @@
     --font-serif: 'GrandSlang', sans-serif;
     ;
 
-    --box-shadow: 3px 3px 1px #000000bc;
+    --box-shadow: 3px 3px 1px #6464641c;
 
 }
+
+
+/* MOBILE FIRST */
 
 html,
 body {
@@ -39,9 +42,21 @@ body {
 
 p {
     font-family: var(--font-sans);
+    width: 80%;
 }
 
-/* MOBILE FIRST */
+.Btn{
+    background-color: #1e1e1ea1;
+    border: none;
+    box-shadow: var(--box-shadow);
+    color: var(--light-lemon);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 2rem;
+}
 
 .Header {
 
@@ -191,7 +206,7 @@ main {
 }
 
 .Section-subtitle {
-    color: var(--light-lemon);
+    color: var(--basic-black);
 
     display: flex;
     flex-direction: column;
@@ -201,7 +216,7 @@ main {
     font-weight: 200;
     font-size: 1.2rem;
     width: 80%;
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
     padding: rem;
 
 
@@ -236,6 +251,7 @@ main {
 
 
 
+
 footer {
     background-color: #1e1e1e;
     color: aliceblue;
@@ -249,6 +265,10 @@ footer {
 
 
 @media (min-width: 767px) {
+
+    .p{
+        width: 90%;
+    }
 
 
     .Header {
