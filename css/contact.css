@@ -1,0 +1,116 @@
+.Section--contact{
+    background-color: var(--light-lemon);
+    margin-top:6rem ;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.Section--container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.Section-title--contact{
+        color: var(--basic-black);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-family: var(--font-serif);
+        font-size: 5rem;
+        font-weight: 100;
+}
+
+.Form{
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0rem;
+    gap:5px;
+
+
+}
+
+.Name, .Email, .Text-area, .Asunto{
+    
+ 
+    border: none;
+    font-size: 1rem;
+    height: 2rem;
+    width: 100%;
+    
+}
+
+.Text-area{
+    
+    height: 10rem;
+   
+}
+
+.Submit-Btn{
+    font-family: var(--font-sans);
+    font-weight: 400;
+    background-color: var(--light-lemon);
+    border-radius: 5px;
+    width: 150px;
+    padding: 10px;
+    margin-top:10px ;
+    color: var(--basic-black);
+
+}
+
+.Imagen-perfil{
+    opacity: 60%;
+    display: flex;
+
+    justify-content: center;
+}
+
+.Imagen-perfil-size{
+    width: 100%;
+
+}
+
+@media (min-width: 767px) {
+
+.Section--contact{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+
+.Section--container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: fit-content;
+
+}
+
+.Imagen-perfil{
+    opacity: 60%;
+    max-width: 500px;
+    
+}
+
+.Imagen-perfil-size{
+    width: 100%;
+
+}
+}

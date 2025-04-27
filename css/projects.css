@@ -1,0 +1,81 @@
+.Section--projects{
+
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.Grid{
+    
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,1fr);
+    place-items: center;
+    gap: 10px;
+    margin: 2rem;
+
+}
+
+.Grid-item{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+
+.Grid a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    
+}
+
+.Grid a:hover{
+    transform: scale(1.1);
+}
+.Grid-itemSize{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 70%;
+
+}
+
+.Grid-itemSize:hover{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 100%;
+
+}
+
+@media (min-width: 767px) {
+
+    .Grid{
+
+         max-width: 1140px;
+         display: grid;
+         grid-template-columns: repeat(3,1fr);
+         grid-template-rows:repeat(2,300px);
+
+         place-items: center;
+     
+      
+     }
+
+}
