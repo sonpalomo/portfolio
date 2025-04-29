@@ -156,6 +156,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     position: sticky;
     top: 0;
     height: 100vh;
@@ -325,21 +326,19 @@ footer {
     }
 
     .Section-subtitle {
-    
-
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        font-size: 3rem;
-        font-family: var(--font-serif);
+        font-size: 1.5rem;
+        font-family: var(--font-sans);
+        font-weight: 100;
         color: var(--basic-black);
-        font-weight: 400;
-        width: fit-content;
-       margin-top: 50px;
+        margin-top: 50px;
 
 
     }
+
 
 
 }
