@@ -1,6 +1,6 @@
 .Section--contact{
     background-color: var(--light-lemon);
-    margin-top:6rem ;
+    margin-top:10rem ;
     margin-bottom: 5rem;
     padding: 2rem;
     display: flex;
@@ -82,7 +82,7 @@
 
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
 
 .Section--contact{
     padding: 2rem;

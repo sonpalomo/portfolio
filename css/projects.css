@@ -1,6 +1,6 @@
 .Section--projects{
 
-    margin-top: 5rem;
+    margin-top: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,9 +14,11 @@
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(6,1fr);
-    place-items: center;
+
+    text-align: start;
+
     gap: 10px;
-    margin: 2rem;
+    margin: 3rem;
 
 }
 
@@ -28,8 +30,6 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-
-
 }
 
 
@@ -64,18 +64,45 @@
 
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
+
+    .Grid{
+
+         max-width: 1140px;
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+         grid-template-rows:repeat(3,400px);
+
+         place-items: center;
+
+
+         margin: 10rem;
+     
+      
+     }
+
+     
+
+}
+
+@media (min-width: 1140px) {
 
     .Grid{
 
          max-width: 1140px;
          display: grid;
          grid-template-columns: repeat(3,1fr);
-         grid-template-rows:repeat(2,300px);
+         grid-template-rows:repeat(3,400px);
 
          place-items: center;
+
+
+         margin: 10rem;
      
       
      }
 
+     
+
 }
+
