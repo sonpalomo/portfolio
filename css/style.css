@@ -47,7 +47,7 @@ p {
 }
 
 .Btn{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -62,16 +62,31 @@ p {
     height: 40px;
     border-radius: 30px;
     margin: 2rem;
-    padding-left: 50px;
-    padding-right: 50px;
+    */
+
+    display: inline-block;
+    color: none;
+    border: 1px solid var(--basic-black);
+    border-radius: 50px;
+    padding: 16px 32px;
+   
+    font-family: var(--font-sans);
+    font-size: 14px;
+    letter-spacing: 1px;
+    background-color: #ffdaf900;
+    cursor:pointer;
+    -webkit-transition: ease-out 0.6s;
+    -moz-transition: ease-out 0.6s;
+    transition: ease-out 0.6s;
 
     
 }
 
 .Btn:hover{
-  background-color: rgba(0, 0, 0, 0);
-  border: solid 1px #1e1e1e;
-    
+  /* background-color: rgba(0, 0, 0, 0);
+   */
+  box-shadow: inset 400px 0 0 0 var(--light-lemon);
+  color: #000000;
 }
 
 .Header {
@@ -252,15 +267,17 @@ main {
 
 .Section:nth-child(1) {
   
-    background-image: url(../sources/images/bg-2.png);
+    background-image: url(../sources/images/bg-2.webp);
+   
     background-size: cover;
     box-shadow: var(--box-shadow);
 
 }
 
 .Section:nth-child(2) {
-    background-color: white;
-    background-image: url(../sources/images/bg-1.png);
+
+    background-image: url(../sources/images/bg-1.webp);
+
     background-size: cover;
 
     box-shadow: var(--box-shadow);
@@ -268,13 +285,14 @@ main {
 
 
 .Section:nth-child(3) {
-    background: #f8ffdd;
-    background-image: url(../sources/images/bg-3.png);
+    background-image: url(../sources/images/bg-3.webp);
     background-size: cover;
+    box-shadow: var(--box-shadow);
 }
 
 .Wrapper {
     height: 400vh;
+   
 }
 
 
@@ -328,7 +346,7 @@ footer {
     }
 
     .Section--hero{
-        padding-top: 10rem;
+      
         background-color: #ffdaf9;
         display: flex;
         justify-content: center;
