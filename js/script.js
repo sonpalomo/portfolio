@@ -14,7 +14,7 @@ menuBtn.addEventListener("click", () => {
 const bloques = document.querySelectorAll(".Bloque-content");
 const Title = document.querySelectorAll(".Bloque-title");
 
-//Cuando CLICK en h2,
+//Cuando CLICK en Title,
   //QUITAR la clase activo de todos los bloques
   //Vamos a añadir la clase activo al bloque con la posición del title
 
@@ -31,7 +31,7 @@ const Title = document.querySelectorAll(".Bloque-title");
 const header = document.querySelector(".Header");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 10) {
+  if (window.scrollY > 5) {
     header.classList.add("scrolled");
   } else {
     header.classList.remove("scrolled");
