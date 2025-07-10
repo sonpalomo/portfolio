@@ -237,6 +237,8 @@ main {
     padding: 0.5rem;
     font-size: 2rem;
     font-weight: 500;
+    min-width: fit-content;
+
 }
 
 .Section-title--bigger {
@@ -271,8 +273,6 @@ main {
     width: 80%;
     font-family: var(--font-sans);
  
-
-
 }
 
 .Section:nth-child(1) {
@@ -303,6 +303,19 @@ main {
 .Wrapper {
     height: 400vh;
    
+}
+
+.Section--comun{
+
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+ 
+    
 }
 
 

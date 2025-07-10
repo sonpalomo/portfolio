@@ -1,5 +1,5 @@
 .Section--contact{
-    background-color: var(--light-lemon);
+
     margin-top:10rem ;
     margin-bottom: 5rem;
     padding: 2rem;
@@ -20,15 +20,9 @@
     
 }
 
-.Section-title--contact{
-        color: var(--basic-black);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        font-family: var(--font-serif);
-        font-size: 5rem;
-        font-weight: 100;
+.Section-subtitle{
+    background-color: rgb(192, 94, 94);
+    justify-content: start;
 }
 
 .Form{
@@ -64,11 +58,13 @@
     opacity: 60%;
     display: flex;
 
+
     justify-content: center;
 }
 
 .Imagen-perfil-size{
-    width: 100%;
+    width: 80%;
+    border-radius: 100%;
 
 }
 
@@ -78,14 +74,16 @@
     padding: 2rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    background-color: blue;
    
 
 }
 
 
 .Section--container{
+    background-color: aqua;
     display: flex;
     flex-direction: column;
     align-items: start;

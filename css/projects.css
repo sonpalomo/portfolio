@@ -1,14 +1,3 @@
-.Section--projects{
-
-    margin-top: 10rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
-}
-
 .Grid{
     
     display: grid;
