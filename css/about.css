@@ -1,7 +1,8 @@
 .Bg{
     
-    background-image: url(../sources/images/fondo-de-textura-de-papel-de-espacio-de-diseno.webp);
+    background-image: url(../sources/images);
 }
+
 
 .Acordeon {
     
@@ -25,6 +26,7 @@
 }
 
 .Bloque-title {
+    
     text-align: center;
     background-color: none;
     border-bottom: 1px solid;
@@ -32,7 +34,7 @@
     border-radius: 0px;
     padding: 1em;
     width: 200px;
-    transition: all .5s ease;
+    transition: height 3s ease;
 
     cursor: pointer;
 
@@ -43,6 +45,7 @@
 }
 
 .Bloque-content {
+
 
     box-sizing: border-box;
 
@@ -59,6 +62,7 @@
     justify-content: center;
     overflow: hidden;
     max-height: 0;
+    
 
 
     transition: max-height 0.5s ease, padding 0.5s ease;
@@ -69,8 +73,19 @@
 
 .Bloque-content.active {
 
-    max-height: 500px;
-    /* ajusta según lo que necesites */
-    padding: 5rem;
+    
+
+    min-height: fit-content;
+    padding: 1rem;
     /* activa el padding de forma suave */
+}
+
+ul{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+  
 }

@@ -32,9 +32,9 @@
     --sweet-pink: #ffdaf9;
     --basic-black: #1e1e1e;
 
-    --font-sans: 'Montserrat';
+    --font-sans: 'Montserrat', sans-serif ;
     --font-serif: 'GrandSlang', sans-serif;
-    --font-serif-ita: 'GrandSlangIta';
+    --font-serif-ita: 'GrandSlangIta', 'GrandSlang', sans-serif;
 
     --box-shadow: 3px 3px 1px #6464641c;
 
@@ -57,12 +57,16 @@ body {
 
 }
 
-p {
+p, li{
     font-family: var(--font-sans);
     font-size: 1rem;
     width: 90%;
     padding:20px;
 }
+
+
+
+
 
  p .Highlight{
     font-family: var(--font-serif);
@@ -234,6 +238,8 @@ main {
 
 .Section-title {
     font-family: var(--font-serif-ita);
+    font-style: italic;
+    
     padding: 0.5rem;
     font-size: 2rem;
     font-weight: 500;
@@ -245,6 +251,7 @@ main {
 
     color: var(--light-lemon);
     display: flex;
+    font-style: normal;
     flex-direction: column;
     justify-content: center;
 
