@@ -34,7 +34,7 @@
     border-radius: 0px;
     padding: 1em;
     width: 200px;
-    transition: height 3s ease;
+
 
     cursor: pointer;
 
@@ -53,7 +53,7 @@
     height: 0px;
 
     padding: 0px 0rem;
-    width: 600px;
+    width: 100%;
 
 
     display: flex;
@@ -65,15 +65,12 @@
     
 
 
-    transition: max-height 0.5s ease, padding 0.5s ease;
     box-sizing: border-box;
 
 
 }
 
 .Bloque-content.active {
-
-    
 
     min-height: fit-content;
     padding: 1rem;
@@ -86,6 +83,7 @@ ul{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 700px;
    
   
 }
