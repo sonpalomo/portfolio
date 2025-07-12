@@ -87,3 +87,7 @@ ul{
    
   
 }
+
+.Bloque-content li {
+    font-family: var(--font-sans);
+}

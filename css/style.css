@@ -57,7 +57,7 @@ body {
 
 }
 
-p, li{
+p{
     font-family: var(--font-sans);
     font-size: 1rem;
     width: 90%;
