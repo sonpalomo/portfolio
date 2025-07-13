@@ -1,11 +1,11 @@
-.Bg{
-    
+.Bg {
+
     background-image: url(../sources/images);
 }
 
 
 .Acordeon {
-    
+
     width: 90%;
 
     margin-bottom: 7rem;
@@ -26,7 +26,7 @@
 }
 
 .Bloque-title {
-    
+
     text-align: center;
     background-color: none;
     border-bottom: 1px solid;
@@ -45,47 +45,39 @@
 }
 
 .Bloque-content {
-
-
-    box-sizing: border-box;
-
-    border-radius: 5px;
-    height: 0px;
-
-    padding: 0px 0rem;
-    width: 100%;
-
-
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    overflow: hidden;
-    max-height: 0;
-    
-
-
-    box-sizing: border-box;
-
+    align-items: center;
+   max-height: 0;
+   overflow: hidden;
+   opacity:0 ;
+   transform: translateY(-20px);
+   transition: 
+   max-height 0.8s ease,
+   opacity 0.8s ease,
+   transform 0.8s ease;
 
 }
+
 
 .Bloque-content.active {
+   
+    max-height: 1000px;
+    opacity: 1;
+    transform: translateY(0);
 
-    min-height: fit-content;
-    padding: 1rem;
-    /* activa el padding de forma suave */
 }
 
-ul{
-  
+ul {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 700px;
-   
-  
+
+
 }
 
 .Bloque-content li {
