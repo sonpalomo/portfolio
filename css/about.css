@@ -57,6 +57,7 @@
    max-height 0.8s ease,
    opacity 0.8s ease,
    transform 0.8s ease;
+   will-change: max-height, opacity, transform;
 
 }
 
