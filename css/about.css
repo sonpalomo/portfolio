@@ -49,14 +49,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
    max-height: 0;
    overflow: hidden;
    opacity:0 ;
    transform: translateY(-20px);
+
    transition: 
    max-height 0.8s ease,
    opacity 0.8s ease,
    transform 0.8s ease;
+
+   /* extra para visualizacion en safari */
    will-change: max-height, opacity, transform;
 
 }
