@@ -137,7 +137,7 @@ p{
 
 .Header-logo:hover {
     transform: scale(1.1);
-    color: var(--light-lemon);
+   
 }
 
 /* li de enlaces del menú de navegación (hidden en mobile) y se abre al hacer click en menuBtn */
@@ -330,7 +330,7 @@ main {
 
 footer {
     background-color: #1e1e1e;
-    color: aliceblue;
+    color: var(--light-lemon);
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -377,7 +377,7 @@ footer {
 
     .Section--hero{
       
-        background-color: #ffdaf9;
+    
         display: flex;
         justify-content: center;
         align-items:center;

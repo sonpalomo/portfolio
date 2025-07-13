@@ -87,4 +87,5 @@ ul {
 
 .Bloque-content li {
     font-family: var(--font-sans);
+    padding: 10px;
 }
