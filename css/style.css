@@ -175,7 +175,7 @@ p{
 
     opacity: 0;
     transform: translateX(500px);
-    animation: slideDown 2.5s ease-out forwards;
+    animation: slideDown 1.5s ease-out forwards;
     
     
 }
@@ -465,6 +465,8 @@ footer {
 
 
     }
+
+  
 
 
 }

@@ -42,22 +42,22 @@ window.addEventListener("scroll", () => {
 });
 
 
-// Buscar layoutproject x correspondiente
+// // Buscar layoutproject x correspondiente
 
-const parametro = new URLSearchParams(window.location.search);
-const projectId = parametro.get("project");
+// const parametro = new URLSearchParams(window.location.search);
+// const projectId = parametro.get("project");
 
-const projects={
-  "1":{
-    title: "Mesa Scheint"
-  },
-  "2":{
-    title: "Lampara Blume"
-  },
+// const projects={
+//   "1":{
+//     title: "Mesa Scheint"
+//   },
+//   "2":{
+//     title: "Lampara Blume"
+//   },
 
-  const project = projects[projectId];
+//   const project = projects[projectId];
 
-}
+// }
 
 
 
