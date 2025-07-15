@@ -264,6 +264,21 @@ main {
 
 }
 
+.Section-comun{
+
+    background-color: cadetblue;
+
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    
+}
+
+
 .Section-title {
     font-family: var(--font-serif-ita);
     font-style: italic;
@@ -282,6 +297,24 @@ main {
 .Section-title--bigger {
 
     color: var(--light-lemon);
+    display: flex;
+    font-style: normal;
+    flex-direction: column;
+    justify-content: center;
+
+ 
+    text-align: center;
+    margin: 3rem;
+
+    font-family: var(--font-serif);
+    font-size: 3.5rem;
+    font-weight: 100;
+
+}
+
+.Section-title--smaller {
+
+    color: var(--basic-black);
     display: flex;
     font-style: normal;
     flex-direction: column;
@@ -353,18 +386,6 @@ main {
    
 }
 
-.Section--comun{
-
-    margin-top: 10rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
- 
-    
-}
 
 
 
