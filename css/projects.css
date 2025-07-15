@@ -2,7 +2,7 @@
     
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(6,1fr);
+    grid-template-rows: repeat(1,1fr);
 
     text-align: start;
 
@@ -40,14 +40,15 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 70%;
+    opacity: 100%;
 
 }
 
+
+
 .Grid-itemSize:hover{
 
-    width: 100%;
-    height: 100%;
+    scale: (1.1);
     object-fit: cover;
     opacity: 100%;
 
@@ -57,10 +58,14 @@
 
     .Grid{
 
+   
+
          max-width: 1140px;
          display: grid;
          grid-template-columns: repeat(2,1fr);
-         grid-template-rows:repeat(3,400px);
+         grid-template-rows:repeat(3,1000px);
+
+         align-self: center;
 
          place-items: center;
 
@@ -69,6 +74,7 @@
      
       
      }
+
 
      
 
@@ -81,15 +87,20 @@
          max-width: 1140px;
          display: grid;
          grid-template-columns: repeat(3,1fr);
-         grid-template-rows:repeat(3,400px);
+         grid-template-rows:repeat(2,1fr);
+         object-fit: cover;
 
          place-items: center;
 
 
          margin: 10rem;
-     
-      
      }
+
+
+
+ 
+
+     
 
      
 

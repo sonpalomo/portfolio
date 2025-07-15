@@ -145,7 +145,7 @@ p{
     flex-direction: row;
     font-family: var(--font-serif);
     letter-spacing: -1px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--basic-black);
     transition: transform 0.2s ease-in-out;
 
@@ -249,7 +249,7 @@ main {
 
 }
 
-.Section--hero {
+/* .Section--hero {
     display: flex;
     flex-direction: column;
 
@@ -262,11 +262,10 @@ main {
     transition: opacity 0.5s ease;
     z-index: 1;
 
-}
+} */
 
 .Section-comun{
 
-    background-color: cadetblue;
 
     margin-top: 10rem;
     display: flex;
@@ -284,8 +283,8 @@ main {
     font-style: italic;
     
     padding: 0.5rem;
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 4rem;
+    font-weight: 300;
     min-width: fit-content;
     opacity: 0;
     transform: translateY(-500px);
@@ -296,7 +295,7 @@ main {
 
 .Section-title--bigger {
 
-    color: var(--light-lemon);
+    color: var(--basic-black);
     display: flex;
     font-style: normal;
     flex-direction: column;
@@ -307,7 +306,7 @@ main {
     margin: 3rem;
 
     font-family: var(--font-serif);
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 100;
 
 }
@@ -352,7 +351,8 @@ main {
 
 .Section:nth-child(1) {
   
-    background-image: url(../sources/images/bg-2.webp);
+    background-image: url(../sources/images/bg-2.web);
+    background-color: #ffdaf9;
    
     background-size: cover;
     box-shadow: var(--box-shadow);
@@ -366,7 +366,8 @@ main {
 
 .Section:nth-child(2) {
 
-    background-image: url(../sources/images/bg-1.webp);
+    background-image: url(../sources/images/bg-1.web);
+    background-color: #f8ffdd;
 
     background-size: cover;
 
@@ -375,7 +376,8 @@ main {
 
 
 .Section:nth-child(3) {
-    background-image: url(../sources/images/bg-3.webp);
+    background-image: url(../sources/images/bg-3.web);
+    background-color: #ffdaf9;
     background-size: cover;
     box-shadow: var(--box-shadow);
 }
@@ -438,8 +440,7 @@ footer {
     }
 
     .Section--hero{
-      
-    
+
         display: flex;
         justify-content: center;
         align-items:center;
@@ -448,11 +449,12 @@ footer {
 
     }
 
-    .Section-title {
+    .Section-title { 
+   
+        padding: 0px;
         font-size:5rem;
         width: 800px;
         text-align: center;
-  
         color: var(--basic-black );
     }
 
@@ -467,13 +469,13 @@ footer {
 
 
     .Section-title--bigger {
-        font-size:8rem;
+        font-size:10rem;
         text-align: center;
-  
-        color: var(--light-lemon);
+
     }
 
     .Section-subtitle {
+        background-color: #ffdaf9;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -482,7 +484,7 @@ footer {
         font-family: var(--font-sans);
         font-weight: 100;
         color: var(--basic-black);
-        margin-top: 50px;
+        padding: 10px;
 
 
     }
