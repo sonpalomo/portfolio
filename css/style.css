@@ -28,10 +28,11 @@
 
 @keyframes slideDown {
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
+}
+
 /*Variables CSS*/
 :root {
 
@@ -40,7 +41,7 @@
     --sweet-pink: #ffdaf9;
     --basic-black: #1e1e1e;
 
-    --font-sans: 'Montserrat', sans-serif ;
+    --font-sans: 'Montserrat', sans-serif;
     --font-serif: 'GrandSlang', sans-serif;
     --font-serif-ita: 'GrandSlangIta', 'GrandSlang', sans-serif;
 
@@ -70,18 +71,18 @@ body {
 
 
 
-p{
+p {
     font-family: var(--font-sans);
     font-size: 1rem;
     width: 90%;
-    padding:20px;
+    padding: 15px;
 }
 
 
 
 
 
- p .Highlight{
+p .Highlight {
     font-family: var(--font-serif);
     font-style: italic;
     font-size: 20px;
@@ -89,31 +90,32 @@ p{
 }
 
 
-.Btn{
+.Btn {
 
     display: inline-block;
     color: none;
     border: 1px solid var(--basic-black);
     border-radius: 50px;
     padding: 16px 32px;
-   
+    margin: 32px;
+
     font-family: var(--font-sans);
     font-size: 14px;
     letter-spacing: 1px;
     background-color: #ffdaf900;
-    cursor:pointer;
+    cursor: pointer;
     -webkit-transition: ease-out 0.6s;
     -moz-transition: ease-out 0.6s;
     transition: ease-out 0.6s;
 
-    
+
 }
 
-.Btn:hover{
-  /* background-color: rgba(0, 0, 0, 0);
+.Btn:hover {
+    /* background-color: rgba(0, 0, 0, 0);
    */
-  box-shadow: inset 400px 0 0 0 var(--light-lemon);
-  color: #000000;
+    box-shadow: inset 400px 0 0 0 var(--light-lemon);
+    color: #000000;
 }
 
 .Header {
@@ -127,16 +129,18 @@ p{
 
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 10%;
 
-    
+
 
 }
 
-.Header.scrolled{
+.Header.scrolled {
     background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px); /* desenfoque */
-    -webkit-backdrop-filter: blur(10px); /* soporte para Safari */
+    backdrop-filter: blur(10px);
+    /* desenfoque */
+    -webkit-backdrop-filter: blur(10px);
+    /* soporte para Safari */
     box-shadow: var(--box-shadow);
-    
+
 }
 
 .Header-logo {
@@ -157,7 +161,7 @@ p{
 
 .Header-logo:hover {
     transform: scale(1.1);
-   
+
 }
 
 /* li de enlaces del menú de navegación (hidden en mobile) y se abre al hacer click en menuBtn */
@@ -167,7 +171,7 @@ p{
     opacity: 95%;
     position: relative;
 
-    color: var(--light-lemon);
+    color: var(--sweet-pink);
     display: none;
     font-family: var(--font-serif);
     gap: 50px;
@@ -176,21 +180,21 @@ p{
     opacity: 0;
     transform: translateX(500px);
     animation: slideDown 1.5s ease-out forwards;
-    
-    
+
+
 }
 
 .Header-menuNav li {
     font-size: 3rem;
     transition: transform 0.2s ease-in-out;
-   
-    
+
+
 }
 
 .Header-menuNav li:hover {
     transform: scale(1.1);
-   
-   
+
+
 }
 
 .Header-menuNav.Active {
@@ -220,13 +224,13 @@ p{
 
     transition: transform 0.3s ease-in-out;
 
-   
+
 }
 
 .material-symbols-outlined:hover {
     transform: scale(1.1);
     color: var(--light-lemon);
-    
+
 }
 
 main {
@@ -264,7 +268,7 @@ main {
 
 } */
 
-.Section-comun{
+.Section-comun {
 
 
     margin-top: 10rem;
@@ -274,25 +278,27 @@ main {
     justify-content: center;
     text-align: center;
     width: 100%;
-    
+
 }
 
 
 .Section-title {
+
     font-family: var(--font-serif-ita);
     font-style: italic;
-    
+
     padding: 0.5rem;
     font-size: 4rem;
     font-weight: 300;
-    min-width: fit-content;
+    max-width: fit-content;
     opacity: 0;
     transform: translateY(-500px);
     animation: slideDown 2s ease-out forwards;
-   
+
 
 }
 
+/* title hero home */
 .Section-title--bigger {
 
     color: var(--basic-black);
@@ -301,25 +307,7 @@ main {
     flex-direction: column;
     justify-content: center;
 
- 
-    text-align: center;
-    margin: 3rem;
 
-    font-family: var(--font-serif);
-    font-size: 3rem;
-    font-weight: 100;
-
-}
-
-.Section-title--smaller {
-
-    color: var(--basic-black);
-    display: flex;
-    font-style: normal;
-    flex-direction: column;
-    justify-content: center;
-
- 
     text-align: center;
     margin: 3rem;
 
@@ -328,6 +316,30 @@ main {
     font-weight: 100;
 
 }
+
+.Section-title--wrap {
+
+
+
+    color: var(--basic-black);
+    display: flex;
+    font-style: normal;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 90%;
+
+
+    text-align: center;
+    
+    margin-bottom: 1rem ;
+
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    font-weight: 100;
+
+}
+
 
 .Section-subtitle {
     color: var(--basic-black);
@@ -346,28 +358,45 @@ main {
     opacity: 0;
     transform: translatex(-500px);
     animation: slideDown 2s ease-out forwards;
- 
+
 }
 
+/* Para párrafos de información */
+
+.Section-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+    text-align: center;
+    max-width: 800px;
+    
+    color: var(--basic-black);
+}
+
+
+
 .Section:nth-child(1) {
-  
-    background-image: url(../sources/images/bg-2.web);
+
+    background-image: url(../sources/images/back.webp);
     background-color: #ffdaf9;
-   
+
+
+
     background-size: cover;
     box-shadow: var(--box-shadow);
 
     opacity: 0;
     transform: translatex(-500px);
     animation: slideDown 2s ease-out forwards;
- 
+
 
 }
 
-.Section:nth-child(2) {
+.Section:nth-child(2) {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 
-    background-image: url(../sources/images/bg-1.web);
-    background-color: #f8ffdd;
+    background-image: url(../sources/images/back-2.webp);
+    background-color: var(--light-lemon);
 
     background-size: cover;
 
@@ -376,7 +405,7 @@ main {
 
 
 .Section:nth-child(3) {
-    background-image: url(../sources/images/bg-3.web);
+    background-image: url(../sources/images/back.webp);
     background-color: #ffdaf9;
     background-size: cover;
     box-shadow: var(--box-shadow);
@@ -384,8 +413,8 @@ main {
 
 .Wrapper {
     height: 400vh;
-    
-   
+
+
 }
 
 
@@ -406,19 +435,115 @@ footer {
 }
 
 
+/* Media Queries tablet */
+@media (min-width: 768px) and (max-width:1140px) {
 
-@media (min-width: 768px) {
 
-    .p{
+    .Section--hero {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+
+    }
+
+    .Section-title {
+
+        padding: 0px;
+
+        max-width: 800px;
+        text-align: center;
+        color: var(--basic-black);
+
+
+    }
+
+    .Section-info {
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+  
+
+        color: var(--basic-black);
+    }
+
+
+    /* titulo de la sección 1 principal tablet */
+    .Section-title--bigger {
+        font-size: 8rem;
+        text-align: center;
+        max-width: 800px;
+
+    }
+
+    .Section-subtitle {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        font-family: var(--font-sans);
+        font-weight: 100;
+        color: var(--basic-black);
+        padding: 10px;
+
+
+    }
+
+    .Section-title--wrap {
+   
+        text-align: center;
+      
+
         width: 90%;
+        font-size: 5rem;
+    }
+
+}
+
+
+/* ------------------------------------- */
+
+/* Media Queries Desktop */
+@media (min-width: 1140px) {
+
+    /* titulo de la sección 1 principal Desktop */
+    .Section-title--bigger {
+        font-size: 12rem;
+        text-align: center;
+       
+
     }
 
 
-    .Header {
-        padding-left: 3rem;
-        padding-right: 3rem;
+
+    .Section-subtitle {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-family: var(--font-sans);
+        font-weight: 100;
+        color: var(--basic-black);
+        padding: 10px;
+
+
     }
 
+    .Section-title--wrap {
+
+        width: 1140px;
+        font-size: 7rem;
+    }
+
+  
     .Header-menuBtn {
         display: none;
     }
@@ -439,59 +564,6 @@ footer {
         font-size: 1.5rem;
     }
 
-    .Section--hero{
-
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        text-align: center;
-
-
-    }
-
-    .Section-title { 
-   
-        padding: 0px;
-        font-size:5rem;
-        width: 800px;
-        text-align: center;
-        color: var(--basic-black );
-    }
-
-    .Section-info {
-        font-size:1rem;
-        width: 500px;
-        text-align: center;
-  
-        color: var(--basic-black );
-    }
-
-
-
-    .Section-title--bigger {
-        font-size:10rem;
-        text-align: center;
-
-    }
-
-    .Section-subtitle {
-        background-color: #ffdaf9;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5rem;
-        font-family: var(--font-sans);
-        font-weight: 100;
-        color: var(--basic-black);
-        padding: 10px;
-
-
-    }
-
-  
 
 
 }
-
-
