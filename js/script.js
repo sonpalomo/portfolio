@@ -64,25 +64,22 @@ const projects = {
     title: "LIA",
     intro: "Identidad Visual - Branding para centro de cultura contemporánea",
     images: ["./sources/images/scheint-.png",
-      "./sources/images/scheint-2.png",
-      "./sources/images/scheint-3.png",
-      "./sources/images/scheint-4.png",
+    
     ],
 
     info: "Este proyecto se inspira en el diseño organico"
    },
 
    "3": {
-    title: " NEA",
+    title: "NEA",
     intro: "Identidad Visual - Branding para centro de cultura contemporánea",
-    images: ["./sources/images/scheint-.png",
-      "./sources/images/nea-featuredimage.webp",
-      "./sources/images/scheint-3.png",
-      "./sources/images/scheint-4.png",
+    images: ["./sources/images/nea-featuredimage.webp",
+    
     ],
 
     info: "Este proyecto se inspira en el diseño organico"
    },
+   
   };
 
   const project = projects[projectId];
