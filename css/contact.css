@@ -1,60 +1,55 @@
-.Section--contact{
+.Section--container {
 
-    margin-top:10rem ;
-    margin-bottom: 5rem;
-    padding: 2rem;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-
-}
-
-.Section--container{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
-    
+    margin-bottom: 100px;
+
 }
 
-.Section-subtitle{
-    background-color: rgb(192, 94, 94);
+.Section-subtitle {
+
     justify-content: start;
 }
 
-.Form{
+.Form {
 
     display: flex;
     flex-direction: column;
-    align-items: start;
+    justify-content: space-between;
+  
     padding: 0rem;
-    gap:5px;
+    gap: 5px;
 
 
 }
 
-.Name, .Email, .Text-area, .Asunto{
-    
- 
+.Name,
+.Email,
+.Text-area,
+.Asunto {
+
     border: none;
+    border-bottom: solid 1px;
+    font-family: var(--font-sans);
     font-size: 1rem;
     height: 2rem;
     width: 100%;
-    
+
 }
 
-.Text-area{
-    
+.Text-area {
+
     height: 10rem;
-   
+
 }
 
 
 
-.Imagen-perfil{
+.Imagen-perfil {
     opacity: 60%;
     display: flex;
 
@@ -62,43 +57,37 @@
     justify-content: center;
 }
 
-.Imagen-perfil-size{
-    width: 80%;
-    border-radius: 100%;
+.Imagen-perfil-size {
+    width: 75%;
+
 
 }
 
 @media (min-width: 768px) {
 
-.Section--contact{
-    padding: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: blue;
-   
-
-}
 
 
-.Section--container{
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: fit-content;
 
-}
+    .Section--container {
+        padding: 10rem;
 
-.Imagen-perfil{
-    opacity: 60%;
-    max-width: 500px;
-    
-}
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        gap: 10px;
 
-.Imagen-perfil-size{
-    width: 100%;
 
-}
+    }
+
+    .Imagen-perfil {
+
+        opacity: 60%;
+        max-width: 500px;
+
+    }
+
+    .Imagen-perfil-size {
+        width: 90%;
+
+    }
 }

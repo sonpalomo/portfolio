@@ -17,6 +17,7 @@
 }
 
 .Container {
+    background-color: aqua;
 
 
     width: 100%;
@@ -35,6 +36,7 @@
 
 .Container-title{
 
+    background-color: beige;
     text-align: center;
 
     font-family: var(--font-sans);
@@ -45,6 +47,8 @@
 }
 
 .Container-subtitle{
+
+
 
     font-family: var(--font-sans);
     font-weight: 200;
@@ -87,6 +91,7 @@
 }
 
 .Bloque-content {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,8 +125,8 @@ ul {
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+    justify-content: start;
     max-width: 700px;
 
 
@@ -148,7 +153,8 @@ ul {
 
     .Container {
 
-        width: 30%;
+        
+        
       
     }
 
