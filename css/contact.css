@@ -5,26 +5,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 95%;
     margin-bottom: 100px;
+    gap:50px
 
 }
 
-.Section-subtitle {
-
-    justify-content: start;
-}
 
 .Form {
+
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 10px;
   
-    padding: 0rem;
-    gap: 5px;
-
-
 }
 
 .Name,
@@ -42,8 +37,10 @@
 }
 
 .Text-area {
+    height: auto;
+    max-height: 10rem;
+    max-width: 900px;
 
-    height: 10rem;
 
 }
 
@@ -63,19 +60,32 @@
 
 }
 
+
+
 @media (min-width: 768px) {
 
 
 
 
     .Section--container {
-        padding: 10rem;
+        padding-top: 3rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Section--container-redes {
 
         display: flex;
-        flex-direction:row;
+        flex-direction: column;
         align-items: center;
-        gap: 10px;
+        padding-top: 0px;
+    }
 
+
+
+    .Section-subtitle {
+
+        justify-content: center;
 
     }
 
@@ -87,7 +97,7 @@
     }
 
     .Imagen-perfil-size {
-        width: 90%;
+        width: 100%;
 
     }
 }
