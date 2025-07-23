@@ -234,9 +234,12 @@ p .Highlight {
 }
 
 main {
+
     flex: 1;
     display: flex;
     flex-direction: column;
+   
+  
 }
 
 .Section {
@@ -250,6 +253,11 @@ main {
     height: 100vh;
     transition: opacity 0.5s ease;
     z-index: 1;
+
+    box-shadow: var(--box-shadow);
+
+    
+
 
 }
 
@@ -375,47 +383,53 @@ main {
 }
 
 
+.Wrapper {
+
+    display: flex;
+    flex-direction: column;
+
+
+ 
+    
+    height: 400vh;
+
+   
+}
+
 
 .Section:nth-child(1) {
 
-    background-image: url("../sources/images/wrap3.jpg");
+    background: linear-gradient(10deg, rgb(238, 243, 181), rgb(180, 154, 231));
     background-attachment: fixed;
     background-size: cover;
-
-
-
-
-    background-size: cover;
-    box-shadow: var(--box-shadow);
-
-
+    
 
 }
 
-.Section:nth-child(2) {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+.Section:nth-child(2) {     
 
-    background-image: url("../sources/images/wrap2.jpg");
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px); 
+    background: linear-gradient(50deg, rgb(238, 243, 181,0.4), rgb(180, 154, 231,0.4));
+/* 
+    background: linear-gradient(10deg, rgb(238, 243, 181), rgb(180, 154, 231)); */
     background-attachment: fixed;
     background-size: cover;
-
    
 
-    box-shadow: var(--box-shadow);
 }
 
 
 .Section:nth-child(3) {
-    background-color: #D5BBFF;
-    background-image: url("../sources/images/wrap3.jpg");
+
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px); 
+    background:  rgba(255, 255, 255, 0.2);
+/* 
+    background: linear-gradient(10deg, rgb(238, 243, 181), rgb(180, 154, 231)); */
     background-attachment: fixed;
     background-size: cover;
-    box-shadow: var(--box-shadow);
-}
-
-.Wrapper {
-    height: 400vh;
-
-
+   
 }
 
 
