@@ -1,5 +1,5 @@
 .Bg {
-    background-color: none;
+  background:none;
 
 }
 
@@ -17,7 +17,7 @@
 }
 
 .Container {
-    background-color: aqua;
+ 
 
 
     width: 100%;
@@ -25,18 +25,13 @@
 
     padding: 50px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
 
 }
 
 
 .Container-title{
 
-    background-color: beige;
+    background-color: var(--light-lemon);
     text-align: center;
 
     font-family: var(--font-sans);
@@ -88,6 +83,12 @@
 
 .Bloque-destacado {
     padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
 }
 
 .Bloque-content {
@@ -96,6 +97,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    text-align: justify;
 
    max-height: 0;
    overflow: hidden;
@@ -134,7 +137,7 @@ ul {
 
 .Bloque-content li {
     font-family: var(--font-sans);
-    padding: 10px;
+    padding-top: 0.5rem ;
 }
 
 

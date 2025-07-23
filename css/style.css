@@ -36,7 +36,7 @@
 /*Variables CSS*/
 :root {
 
-    --light-lemon: #f8ffdd;
+    --light-lemon: #fef9e6 ;
 
     --sweet-pink: #cecbf4;
     --basic-black: #1e1e1e;
@@ -74,8 +74,8 @@ body {
 p {
     font-family: var(--font-sans);
     font-size: 1rem;
-    width: 90%;
-    padding: 15px;
+    padding-top:1rem ;
+ 
 }
 
 
@@ -167,15 +167,13 @@ p .Highlight {
 /* li de enlaces del menú de navegación (hidden en mobile) y se abre al hacer click en menuBtn */
 .Header-menuNav {
 
-    background-color: var(--basic-black);
-    opacity: 95%;
+    background: black;
     position: relative;
 
-    color: var(--sweet-pink);
+    color: var(--light-lemon);
     display: none;
     font-family: var(--font-serif);
     gap: 50px;
-
 
     opacity: 0;
     transform: translateX(500px);
@@ -399,7 +397,7 @@ main {
 
 .Section:nth-child(1) {
 
-    background: linear-gradient(10deg, rgb(238, 243, 181), rgb(180, 154, 231));
+    background: linear-gradient(150deg,  #fef9e677, rgb(206, 181, 255));
     background-attachment: fixed;
     background-size: cover;
     
@@ -408,9 +406,9 @@ main {
 
 .Section:nth-child(2) {     
 
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(30px); 
-    background: linear-gradient(50deg, rgb(238, 243, 181,0.4), rgb(180, 154, 231,0.4));
+    background: linear-gradient(50deg, #fef9e677), rgb(206, 181, 255,0.5);
 /* 
     background: linear-gradient(10deg, rgb(238, 243, 181), rgb(180, 154, 231)); */
     background-attachment: fixed;
@@ -422,11 +420,10 @@ main {
 
 .Section:nth-child(3) {
 
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(30px); 
-    background:  rgba(255, 255, 255, 0.2);
-/* 
-    background: linear-gradient(10deg, rgb(238, 243, 181), rgb(180, 154, 231)); */
+    background: linear-gradient(50deg, #fef9e677);
+
     background-attachment: fixed;
     background-size: cover;
    
