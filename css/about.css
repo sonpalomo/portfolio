@@ -1,7 +1,8 @@
 .Bg {
  
-    background:url(../sources/images/aboutme.webp);
-
+   background:url(../sources/images/aboutme.webp); 
+    /* background: linear-gradient(50deg, #fef9e677), rgb(206, 181, 255, 0.5); */
+    image-rendering: auto; /* evita que se pixelee */
 }
 
 .Section-about{

@@ -123,8 +123,7 @@ p .Highlight {
 }
 
 .Btn:hover {
-    /* background-color: rgba(0, 0, 0, 0);
-   */
+
     box-shadow: inset 400px 0 0 0 var(--light-lemon);
     color: #000000;
 }
@@ -294,7 +293,7 @@ main {
     font-weight: 300;
     max-width: fit-content;
     opacity: 0;
-    transform: translateY(-500px);
+    transform: translateY(-10px) translateX(-10px);
     animation: slideDown 2s ease-out forwards;
 
 
@@ -391,8 +390,9 @@ main {
     background-image: url(../sources/images/backa-blue-pink.jpg);
     background-attachment: fixed;
     background-size: cover;
-    position: relative;
-
+  
+    background: linear-gradient(10deg, rgba(238, 243, 181, 0.605), rgba(197, 153, 255, 0.403)); 
+    /* background: linear-gradient(50deg, #fff1bd), rgba(170, 131, 250, 0.5); */
 
 }
 
@@ -406,10 +406,8 @@ main {
     background-attachment: fixed;
     background-size: cover;
 
-    background-image: url(../sources/images/backa-blue-pink.jpg);
+   
     
-
-    position: relative;
 
 }
 
@@ -423,7 +421,8 @@ main {
     background-attachment: fixed;
     background-size: cover;
 
-    background-image: url(../sources/images/backa-blue-pink.jpg);
+    /* background-image: url(../sources/images/backa-blue-pink.jpg); */
+     background: linear-gradient(50deg, #fef9e677), rgb(206, 181, 255, 0.5);
 
 }
 
@@ -455,7 +454,7 @@ footer {
 }
 
 .u-white {
-    color: #fef9e6c2;
+    color: #ffffffee;
 }
 
 
