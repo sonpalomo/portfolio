@@ -1,29 +1,38 @@
-.Bg {
- 
-   background:url(../sources/images/aboutme.webp); 
-    /* background: linear-gradient(50deg, #fef9e677), rgb(206, 181, 255, 0.5); */
-    image-rendering: auto; /* evita que se pixelee */
-    position: fixed;
+main{
+    background: linear-gradient(170deg, rgba(238, 243, 181, 0.605), rgba(197, 153, 255, 0.403)); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-attachment: fixed;
 }
+
+
 
 .Section-about{
 
     display: flex;
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
-    
+    width: 80%;
     gap: 10px;
+    font-size: 0.5rem;
+    
 }
+
+.Section-info{
+    font-size: .5rem;
+}
+
+
 
 .Container {
  
     width: 90%;
-    min-height: 700px;
-
-    padding: 50px;
-
+    min-height: 500px;
+    padding-top: 100px;
 
 }
 
@@ -33,59 +42,75 @@
 
     text-align: center;
 
-    font-family: var(--font-sans);
-    font-weight: 200;
+    font-family: var(--font-serif);
+    font-weight: 400;
 
-    font-size: 2rem;
-
-}
-
-.Container-subtitle{
-
-
-
-    font-family: var(--font-sans);
-    font-weight: 200;
-
-    font-size: 1.5rem;
+    font-size: 3rem;
+    
 
 }
 
 
 /* Acordeón */
+
+.Section-about--acordion{
+    max-width: 90%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    
+    gap: 10px;
+}
 .Bloque {
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+ 
     margin-bottom: 1rem;
     margin-top: 1rem;
     width: 100%;
-
+   
+    padding: 15px;
+    border-radius: 10px;
 
 }
 
 .Bloque-title {
 
     text-align: center;
+    font-size: 1.6rem;
     background-color: none;
-    border-bottom: 1px solid;
-    font-family: var(--font-serif);
-    border-radius: 0px;
-    padding: 1em;
-    width: 200px;
+    border-bottom: 1px solid; 
 
+    font-family: var(--font-serif);
+   
+
+    padding: 0.5em;
+    width: 250px;
 
     cursor: pointer;
+    /* border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    background-color: rgba(240, 248, 255, 0.345); */
+
 
 }
 
 .Bloque-destacado {
+    width: 100%;
     padding-bottom: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+  
+    text-align: justify;
+ 
+
     
 
 }
@@ -96,7 +121,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+ 
     text-align: justify;
 
    max-height: 0;
@@ -111,6 +136,8 @@
 
    /* extra para visualizacion en safari */
    will-change: max-height, opacity, transform;
+
+  
 
 }
 
@@ -129,7 +156,7 @@ ul {
     flex-direction: column;
 
     justify-content: start;
-    max-width: 500px;
+    max-width: 700px;
 
 
 }
@@ -139,23 +166,51 @@ ul {
     padding-top: 0.5rem ;
 }
 
+.Message{
+  
+display: flex;
+flex-direction: column;
+justify-content: center;align-items: center;
+max-height: 50px;
+
+}
+
 
 @media (min-width: 1140px) {
 
+    .Container{min-height: 700px;}
+
     .Section-about{
       
-
         display: flex;
-        flex-direction:row;
+        flex-direction:column;
         align-items: center;
         justify-content: center;
-        padding-top: 5rem;
-        gap: 10px;
+        
+        gap: 8px;
+        max-width: 50%;
+      
     }
 
-    .Container{
+    .Section-about--acordion{
+
+
+
+        display: flex;
+        flex-direction: row;
     
-        width: 500px;
+        align-items: center;
+        justify-content: center;
+     
+        
+        gap: 50px;
+     
+    }
+    .Container{
+   
+    
+        min-width:500px;
+    
     }
 
   

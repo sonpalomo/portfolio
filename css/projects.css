@@ -1,3 +1,13 @@
+main{
+    background: linear-gradient(170deg, rgba(238, 243, 181, 0.185), rgba(197, 153, 255, 0.172)); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-attachment: fixed;
+}
+
 .Grid{
     
     display: grid;

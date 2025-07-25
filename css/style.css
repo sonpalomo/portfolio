@@ -82,7 +82,8 @@ p {
 .Section-info p {
 
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1rem;
+  
 
 
 }
@@ -134,7 +135,7 @@ p .Highlight {
     justify-content: space-between;
     z-index: 2;
     width: 100%;
-    padding: 2.2rem 4rem 2rem 4rem;
+    padding: 2rem 1rem 2rem 1.4rem;
     position: fixed;
 
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 10%;
@@ -177,7 +178,7 @@ p .Highlight {
 /* li de enlaces del menú de navegación (hidden en mobile) y se abre al hacer click en menuBtn */
 .Header-menuNav {
 
-    background: black;
+background-color: var(--basic-black);
     position: relative;
 
     color: var(--light-lemon);
@@ -185,9 +186,12 @@ p .Highlight {
     font-family: var(--font-serif);
     gap: 50px;
 
-    opacity: 0;
+    opacity: 10%;
     transform: translateX(500px);
-    animation: slideDown 1.5s ease-out forwards;
+    animation: slideDown 1.3s ease-out forwards;
+
+ 
+   
 
 
 }
@@ -215,8 +219,9 @@ p .Highlight {
     left: 0%;
 
     top: 0%;
-    width: 100%;
+    min-width: 100%;
     height: 100vh;
+ 
 
 }
 
@@ -310,7 +315,7 @@ main {
 
 
     text-align: center;
-    margin: 2rem;
+   
 
     font-family: var(--font-serif);
     font-size: 5rem;
@@ -351,13 +356,12 @@ main {
     justify-content: center;
     text-align: center;
     font-weight: 200;
-    font-size: 1.2rem;
-    width: 70%;
+    font-size: 1rem;
+    width: 80%;
     font-family: var(--font-sans);
 
-
     opacity: 0;
-    transform: translatex(-500px);
+    transform: translateY(500px);
     animation: slideDown 2s ease-out forwards;
 
 }
@@ -370,7 +374,7 @@ main {
     align-items: center;
     font-size: 1.3rem;
     text-align: center;
-    max-width: 800px;
+    max-width: 90%;
     color: var(--basic-black);
 }
 
@@ -386,13 +390,10 @@ main {
 
 .Section:nth-child(1) {
 
-
-    background-image: url(../sources/images/backa-blue-pink.jpg);
     background-attachment: fixed;
     background-size: cover;
   
-    background: linear-gradient(10deg, rgba(238, 243, 181, 0.605), rgba(197, 153, 255, 0.403)); 
-    /* background: linear-gradient(50deg, #fff1bd), rgba(170, 131, 250, 0.5); */
+    background: linear-gradient(10deg, rgba(238, 243, 181, 0.605), rgba(197, 153, 255, 0.403));
 
 }
 
@@ -400,11 +401,9 @@ main {
 
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(30px);
-    background: linear-gradient(50deg, #fef9e677), rgb(206, 181, 255, 0.5);
-    /* 
-    background: linear-gradient(10deg, rgb(238, 243, 181), rgb(180, 154, 231)); */
     background-attachment: fixed;
     background-size: cover;
+    background: linear-gradient(170deg, rgba(238, 243, 181, 0.605), rgba(197, 153, 255, 0.403)); 
 
    
     
@@ -416,13 +415,10 @@ main {
 
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(30px);
-    background: linear-gradient(50deg, #fef9e677);
-
     background-attachment: fixed;
     background-size: cover;
+    background: linear-gradient(50deg, rgba(238, 243, 181, 0.605), rgba(197, 153, 255, 0.403)); 
 
-    /* background-image: url(../sources/images/backa-blue-pink.jpg); */
-     background: linear-gradient(50deg, #fef9e677), rgb(206, 181, 255, 0.5);
 
 }
 
@@ -553,8 +549,15 @@ footer {
 
     .Section-title--wrap {
         width: 1140px;
-        font-size: 7rem;
+        font-size: 6rem;
     }
+
+
+.Section-info p{
+    
+    font-size: 1.4rem;
+  
+}
 
     .Header-menuBtn {
         display: none;
