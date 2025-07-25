@@ -36,7 +36,7 @@
 /*Variables CSS*/
 :root {
 
-    --light-lemon: #fef9e6 ;
+    --light-lemon: #fef9e6;
 
     --sweet-pink: #cecbf4;
     --basic-black: #1e1e1e;
@@ -74,27 +74,19 @@ body {
 p {
     font-family: var(--font-sans);
     font-size: 1rem;
-    padding-top:1rem ;
- 
+    padding-top: 1rem;
+
 }
 
 
- .Section-info p{
+.Section-info p {
 
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1.2rem;
-   
- 
+
+
 }
 
-.Section--info-terms{
-    background-color: #fef9e6;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    max-width: 1140px;
-    gap: 30px;
-}
 
 
 
@@ -143,7 +135,7 @@ p .Highlight {
     justify-content: space-between;
     z-index: 2;
     width: 100%;
-    padding: 2rem;
+    padding: 2.2rem 4rem 2rem 4rem;
     position: fixed;
 
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 10%;
@@ -168,13 +160,13 @@ p .Highlight {
     flex-direction: row;
     font-family: var(--font-serif);
     letter-spacing: -1px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--basic-black);
     transition: transform 0.2s ease-in-out;
 
 
     opacity: 0;
-    transform: translateY(-100px);
+    transform: translateX(-100px);
     animation: slideDown 2s ease-out forwards;
 }
 
@@ -255,8 +247,8 @@ main {
     flex: 1;
     display: flex;
     flex-direction: column;
-   
-  
+
+
 }
 
 .Section {
@@ -273,25 +265,10 @@ main {
 
     box-shadow: var(--box-shadow);
 
-    
-
 
 }
 
-/* .Section--hero {
-    display: flex;
-    flex-direction: column;
 
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-
-    transition: opacity 0.5s ease;
-    z-index: 1;
-
-} */
 
 .Section-comun {
 
@@ -326,7 +303,7 @@ main {
 /* title hero home */
 .Section-title--bigger {
 
-    color: var(--basic-black);
+    color: var(--basic-black) ;
     display: flex;
     font-style: normal;
     flex-direction: column;
@@ -334,10 +311,10 @@ main {
 
 
     text-align: center;
-    margin: 3rem;
+    margin: 2rem;
 
     font-family: var(--font-serif);
-    font-size: 3.5rem;
+    font-size: 5rem;
     font-weight: 100;
 
 }
@@ -356,8 +333,8 @@ main {
 
 
     text-align: center;
-    
-    margin-bottom: 1rem ;
+
+    margin-bottom: 1rem;
 
     font-family: var(--font-serif);
     font-size: 3rem;
@@ -376,7 +353,7 @@ main {
     text-align: center;
     font-weight: 200;
     font-size: 1.2rem;
-    width: 80%;
+    width: 70%;
     font-family: var(--font-sans);
 
 
@@ -395,44 +372,44 @@ main {
     font-size: 1.3rem;
     text-align: center;
     max-width: 800px;
-    
     color: var(--basic-black);
 }
 
 
 .Wrapper {
-
     display: flex;
     flex-direction: column;
-
-
- 
-    
     height: 400vh;
-
-   
 }
+
+
 
 
 .Section:nth-child(1) {
 
-    background: linear-gradient(150deg,  #fef9e677, rgb(206, 181, 255));
+
+    background-image: url(../sources/images/backa-blue-pink.jpg);
     background-attachment: fixed;
     background-size: cover;
-    
+    position: relative;
+
 
 }
 
-.Section:nth-child(2) {     
+.Section:nth-child(2) {
 
     backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(30px); 
-    background: linear-gradient(50deg, #fef9e677), rgb(206, 181, 255,0.5);
-/* 
+    -webkit-backdrop-filter: blur(30px);
+    background: linear-gradient(50deg, #fef9e677), rgb(206, 181, 255, 0.5);
+    /* 
     background: linear-gradient(10deg, rgb(238, 243, 181), rgb(180, 154, 231)); */
     background-attachment: fixed;
     background-size: cover;
-   
+
+    background-image: url(../sources/images/backa-blue-pink.jpg);
+    
+
+    position: relative;
 
 }
 
@@ -440,15 +417,17 @@ main {
 .Section:nth-child(3) {
 
     backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(30px); 
+    -webkit-backdrop-filter: blur(30px);
     background: linear-gradient(50deg, #fef9e677);
 
     background-attachment: fixed;
     background-size: cover;
-   
+
+    background-image: url(../sources/images/backa-blue-pink.jpg);
+
 }
 
-.Redes-container{
+.Redes-container {
 
     padding-top: 24px;
 
@@ -473,6 +452,10 @@ footer {
     font-family: var(--font-sans);
 
     z-index: 1;
+}
+
+.u-white {
+    color: #fef9e6c2;
 }
 
 
@@ -502,12 +485,12 @@ footer {
     }
 
     .Section-info {
-      
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-  
+
 
         color: var(--basic-black);
     }
@@ -515,7 +498,7 @@ footer {
 
     /* titulo de la sección 1 principal tablet */
     .Section-title--bigger {
-        font-size: 8rem;
+        font-size: 10rem;
         text-align: center;
         max-width: 800px;
 
@@ -527,20 +510,17 @@ footer {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        font-size: 1rem;
+        font-size: 2rem;
         font-family: var(--font-sans);
         font-weight: 100;
         color: var(--basic-black);
-        padding: 10px;
+      
 
 
     }
 
     .Section-title--wrap {
-   
         text-align: center;
-      
-
         width: 90%;
         font-size: 5rem;
     }
@@ -555,13 +535,9 @@ footer {
 
     /* titulo de la sección 1 principal Desktop */
     .Section-title--bigger {
-        font-size: 12rem;
+        font-size: 16rem;
         text-align: center;
-       
-
     }
-
-
 
     .Section-subtitle {
 
@@ -569,22 +545,18 @@ footer {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: var(--font-sans);
         font-weight: 100;
         color: var(--basic-black);
-        padding: 10px;
-
-
+       
     }
 
     .Section-title--wrap {
-
         width: 1140px;
         font-size: 7rem;
     }
 
-  
     .Header-menuBtn {
         display: none;
     }
@@ -603,6 +575,15 @@ footer {
 
     .Header-menuNav li {
         font-size: 1.5rem;
+    }
+
+    .Btn.u-white{
+        border:  solid 1px white;
+    }
+
+    .Section-subtitle.u-white {
+        color: #fef9e6c2;
+      
     }
 
 

@@ -49,7 +49,7 @@ const projectId = parametro.get("project");
 
 const projects = {
   "1": {
-    title: "Mesa Scheint",
+    title: "Mesita Scheint",
     intro: "Diseño de mobiliario organico",
     images: ["./sources/images/scheint-1.png",
       "./sources/images/scheint-2.png",

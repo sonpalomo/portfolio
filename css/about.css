@@ -1,11 +1,10 @@
 .Bg {
-  background:none;
+ 
+    background:url(../sources/images/aboutme.webp);
 
 }
 
 .Section-about{
-
-
 
     display: flex;
     flex-direction: column;
@@ -18,9 +17,7 @@
 
 .Container {
  
-
-
-    width: 100%;
+    width: 90%;
     min-height: 700px;
 
     padding: 50px;
@@ -31,7 +28,7 @@
 
 .Container-title{
 
-    background-color: var(--light-lemon);
+
     text-align: center;
 
     font-family: var(--font-sans);
@@ -130,7 +127,7 @@ ul {
     flex-direction: column;
 
     justify-content: start;
-    max-width: 700px;
+    max-width: 500px;
 
 
 }
@@ -141,7 +138,7 @@ ul {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 1140px) {
 
     .Section-about{
       
@@ -151,9 +148,13 @@ ul {
         align-items: center;
         justify-content: center;
         padding-top: 5rem;
-        gap: 0px;
+        gap: 10px;
     }
 
+    .Container{
+    
+        width: 500px;
+    }
 
   
 

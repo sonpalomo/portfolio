@@ -1,60 +1,146 @@
 
+.Section:nth-child(1) {
 
+    background-image:url(../sources/images/scheint-1.png);
+    background-attachment: fixed;
+    background-size:cover;
+justify-content: center;
+position: relative;
+}
 
-.carousel{
-    background-color: beige;
-    width:100% ;
+.Image-container {
+    
+    width: 100%;
+ 
     overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem;
+
 
 }
 
-.carousel-img{
-    background-color: aqua;
-    max-width: 100%;
+.Section-tags {
 
-  
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 16px;
+
+    margin: 16px;
 
 }
+
+.Tag-item {
+
+   
+
+    border: 1px solid;
+
+    font-family: var(--font-sans);
+    font-size: 1rem;
+
+    border-radius: 50px;
+    padding: 0.5em;
+
+
+}
+
 
 
 
 
 @media (min-width: 1140px) {
 
-    .Go-back{
+    .Section-topper {
 
 
-        min-width: 70%;
+   
         display: flex;
         flex-direction: row;
-       justify-content: end;
-     
-    
-     
-    }
-
-    .carousel{
-        width:70% ;
-        overflow: hidden;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+       
         align-items: center;
-        gap: 1rem;
-        padding: 1rem;
-    
-    }
-    
+
 
 
     }
 
-     
 
 
+    .Section--projects {
+        justify-content: center;
+
+
+    }
+
+    .Section-tags {
+
+
+        display: flex;
+        flex-direction: row;
+
+        gap: 16px;
+
+        margin: 16px;
+
+    }
+
+    .Tag-item {
+
+       
+
+        border: 1px solid;
+
+        font-family: var(--font-sans);
+        font-size: 1.2rem;
+
+        border-radius: 50px;
+        padding: 0.5em;
+
+
+    }
+
+    .Image-container {
+
+        
+
+        width: 100vw;
+   
+        overflow: hidden;
+
+        margin: 50px;
+
+
+    }
+
+    .Image-content{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .Info-blur{
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+ 
+
+        background-color: rgba(255, 255, 255, 0.3);
+        
+        backdrop-filter: blur(5px);
+
+        position: fixed;
+
+        box-shadow: var(--box-shadow);
+    }
+
+    .Section-info{
+        max-width: 100%;
+
+        padding: 5rem;
+    }
+
+}
