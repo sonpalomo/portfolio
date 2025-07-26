@@ -1,17 +1,8 @@
 
-/* .Section:nth-child(1) {
-/* 
-    background-image:url(../sources/images/backa-blue-pink.jpg);
-    background-attachment: fixed;
-    background-size:cover; 
-
-
-} */
-
 
 .Section:nth-child(2) {
 
-    background: rgba(240, 248, 255, 0.497);
+    background: rgba(240, 248, 255, 0.302);
     background-attachment: fixed;
     background-size:cover;
 
@@ -19,15 +10,75 @@
 
 .Section:nth-child(3) {
 
-    background: rgba(240, 248, 255, 0);
+    background: none;
     background-attachment: fixed;
     background-size:cover;
 
 }
+
+.Section--Container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+
+    align-items: center;
+    gap: 50px;
+
+
+}
+
+.Container-title{
+    text-align: center;
+    background-color: antiquewhite;
+    justify-content: start;
+
+    font-family: var(--font-serif);
+    font-weight: 400;
+
+    font-size: 2rem;
+
+}
+
+.Container-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: aqua; */
+   
+    width: 90%;
+    height: 60%;
+
+}
+
+.Bloque{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: bisque;  */
+    width: 30%;
+    margin: 50px;
+    font-size: 1.4rem;
+    overflow: hidden;
+    
+}
+
+.Bloque-title{
+
+text-align: center;
+font-size: 1.6rem;
+background-color: none;
+border-bottom: 1px solid; 
+
+font-family: var(--font-serif);
+ }
+
+  
 .Section-info{
+    border: solid 1px black;
     max-width: 100%;
     font-family: var(--font-sans);
 }
+
 .Section-title{
     font-size: 78px;
 }
@@ -36,19 +87,17 @@
     font-size: 24px;
 }
 
+
+
 .u-blur{
+
     justify-content: center;
     width: 100%;
     height: 100%;
 
-
-    background-color: rgba(250, 250, 250, 0.493);
-
-    
-    backdrop-filter: blur(15px);
-
+    background-color: rgba(44, 44, 44, 0.772);     
+    backdrop-filter: blur(25px);
     position: fixed;
-
     box-shadow: var(--box-shadow);
 }
 
@@ -78,24 +127,29 @@
 #projectImages {
     position: relative;
     width: 90%;
-    height: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 
     overflow: hidden;
+
+ 
+   
     
   }
   
   #projectImages img {
     width: 100%;
     display: none;
-    object-fit: cover;
+    object-fit:contain;
     position: absolute;
     top: 0;
     left: 0;
     transition: opacity 0.5s ease;
+  
     
  
   }
@@ -104,20 +158,25 @@
     display: block;
     position: relative;
   }
-  
+
+
+
 
 
 @media (min-width: 1140px) {
 
-    .Section-topper {
-   
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+    .Section-title--wrap{
+        font-size: 160px;
     }
 
-    .Section--projects {
+    .Section--project {
         justify-content: center;
+       
+    }
+
+    .Section-subtitle {
+        font-weight: 400;
+       
     }
 
     .Section-tags {
@@ -136,6 +195,7 @@
     .Section-info{
         max-width: 100%;
         padding: 5rem;
+      
     }
 
 }

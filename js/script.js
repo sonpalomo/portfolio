@@ -59,11 +59,28 @@ const projects = {
   "1": {
     title: "Mesa Scheint",
     intro: "Diseño de mobiliario organico",
-    background: ["url(../sources/images/scheint-1.png)",
-    ],
+    background: ["url(../sources/images/scheint-1.webp)"],
+    info: `
 
-    info: "Este proyecto se inspira en el diseño organico"
+                <div class="Bloque"> 
+                   <h3 class="Bloque-title">Titulo <h3>
+                   <p style="font-weight:300; font-size:1.2rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nemo unde suscipit beatae officiis aspernatur sint vero, reiciendis, eaque corporis placeat non sit adipisci facilis. Est, quasi. Perferendis, enim sint!  </p> 
+                </div>
+
+                 <div class="Bloque"> 
+                   <h3 class="Bloque-title">Titulo <h3>
+                   <p style="font-weight:300; font-size:1.2rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nemo unde suscipit beatae officiis aspernatur sint vero, reiciendis, eaque corporis placeat non sit adipisci facilis. Est, quasi. Perferendis, enim sint!  </p> 
+                </div>
+
+                 <div class="Bloque"> 
+                   <h3 class="Bloque-title">Titulo <h3>
+                   <p style="font-weight:300; font-size:1.2rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nemo unde suscipit beatae officiis aspernatur sint vero, reiciendis, eaque corporis placeat non sit adipisci facilis. Est, quasi. Perferendis, enim sint!  </p> 
+                </div>
+
+                
+                `
   },
+
 
   "2": {
     title: "NEA",
@@ -71,7 +88,25 @@ const projects = {
     background: ["url(../sources/images/home-nea.webp)",
     ],
 
-    info: "Este proyecto se inspira en el diseño organico"
+        info: `
+    
+                <div class="Bloque"> 
+                   <h3 class="Bloque-title">Titulo <h3>
+                   <p style="font-weight:300; font-size:1.2rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nemo unde suscipit beatae officiis aspernatur sint vero, reiciendis, eaque corporis placeat non sit adipisci facilis. Est, quasi. Perferendis, enim sint!  </p> 
+                </div>
+
+                 <div class="Bloque"> 
+                   <h3 class="Bloque-title">Titulo <h3>
+                   <p style="font-weight:300; font-size:1.2rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nemo unde suscipit beatae officiis aspernatur sint vero, reiciendis, eaque corporis placeat non sit adipisci facilis. Est, quasi. Perferendis, enim sint!  </p> 
+                </div>
+
+                 <div class="Bloque"> 
+                   <h3 class="Bloque-title">Titulo <h3>
+                   <p style="font-weight:300; font-size:1.2rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nemo unde suscipit beatae officiis aspernatur sint vero, reiciendis, eaque corporis placeat non sit adipisci facilis. Est, quasi. Perferendis, enim sint!  </p> 
+                </div>
+
+                
+                `
   },
 
 
@@ -81,16 +116,16 @@ const projects = {
 const images = {
   "1": {
     image: [
-      "../sources/images/scheint-1.png",
-      "../sources/images/scheint-2.png",
-      "../sources/images/scheint-3.png"
+      "../sources/images/scheint-1.webp",
+      "../sources/images/scheint-2.webp",
+      "../sources/images/scheint-3.webp"
     ]
   },
 
   "2": {
     image: [
-      "../sources/images/nea-1.png",
-      "../sources/images/nea-2.png",
+      "../sources/images/home-nea.webp",
+      "../sources/images/nea-2.jpeg",
       "../sources/images/nea-3.png"
     ]
   }
@@ -103,7 +138,7 @@ const project = projects[projectId];
 if (project) {
   document.getElementById("projectTitle").textContent = project.title;
   document.getElementById("projectIntro").textContent = project.intro;
-  document.getElementById("projectInfo").textContent = project.info;
+  document.getElementById("projectInfo").innerHTML = project.info;
 
 
 
@@ -115,7 +150,7 @@ if (project) {
   featured.style.backgroundRepeat = "no-repeat";
   featured.style.backgroundPosition = "center";
 
-  // Carrusel automático simple
+  // Carrusel automático 
   const imagesContainer = document.getElementById("projectImages");
   const projectImages = images[projectId]?.image;
 

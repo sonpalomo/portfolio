@@ -83,7 +83,7 @@ p {
 
     font-weight: 300;
     font-size: 1rem;
-  
+
 
 
 }
@@ -178,7 +178,7 @@ p .Highlight {
 /* li de enlaces del menú de navegación (hidden en mobile) y se abre al hacer click en menuBtn */
 .Header-menuNav {
 
-background-color: var(--basic-black);
+    background-color: var(--basic-black);
     position: relative;
 
     color: var(--light-lemon);
@@ -190,8 +190,8 @@ background-color: var(--basic-black);
     transform: translateX(500px);
     animation: slideDown 1.3s ease-out forwards;
 
- 
-   
+
+
 
 
 }
@@ -221,7 +221,7 @@ background-color: var(--basic-black);
     top: 0%;
     min-width: 100%;
     height: 100vh;
- 
+
 
 }
 
@@ -307,16 +307,12 @@ main {
 /* title hero home */
 .Section-title--bigger {
 
-    color: var(--basic-black) ;
+    color: var(--basic-black);
     display: flex;
     font-style: normal;
     flex-direction: column;
     justify-content: center;
-
-
     text-align: center;
-   
-
     font-family: var(--font-serif);
     font-size: 5rem;
     font-weight: 100;
@@ -355,13 +351,13 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1rem;
     width: 80%;
     font-family: var(--font-sans);
 
     opacity: 0;
-    transform: translateY(500px);
+    transform: translateX(10px);
     animation: slideDown 2s ease-out forwards;
 
 }
@@ -392,7 +388,7 @@ main {
 
     background-attachment: fixed;
     background-size: cover;
-  
+
     background: linear-gradient(10deg, rgba(238, 243, 181, 0.605), rgba(197, 153, 255, 0.403));
 
 }
@@ -403,10 +399,7 @@ main {
     -webkit-backdrop-filter: blur(30px);
     background-attachment: fixed;
     background-size: cover;
-    background: linear-gradient(170deg, rgba(238, 243, 181, 0.605), rgba(197, 153, 255, 0.403)); 
-
-   
-    
+    background: linear-gradient(170deg, rgba(238, 243, 181, 0.605), rgba(197, 153, 255, 0.403));
 
 }
 
@@ -417,7 +410,7 @@ main {
     -webkit-backdrop-filter: blur(30px);
     background-attachment: fixed;
     background-size: cover;
-    background: linear-gradient(50deg, rgba(238, 243, 181, 0.605), rgba(197, 153, 255, 0.403)); 
+    background: linear-gradient(50deg, rgba(238, 243, 181, 0.605), rgba(197, 153, 255, 0.403));
 
 
 }
@@ -509,7 +502,7 @@ footer {
         font-family: var(--font-sans);
         font-weight: 100;
         color: var(--basic-black);
-      
+
 
 
     }
@@ -544,7 +537,7 @@ footer {
         font-family: var(--font-sans);
         font-weight: 100;
         color: var(--basic-black);
-       
+
     }
 
     .Section-title--wrap {
@@ -553,11 +546,11 @@ footer {
     }
 
 
-.Section-info p{
-    
-    font-size: 1.4rem;
-  
-}
+    .Section-info p {
+
+        font-size: 1.4rem;
+
+    }
 
     .Header-menuBtn {
         display: none;
@@ -579,13 +572,13 @@ footer {
         font-size: 1.5rem;
     }
 
-    .Btn.u-white{
-        border:  solid 1px white;
+    .Btn.u-white {
+        border: solid 1px white;
     }
 
     .Section-subtitle.u-white {
         color: #fef9e6c2;
-      
+
     }
 
 
