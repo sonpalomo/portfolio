@@ -116,7 +116,7 @@ const projects = {
 const images = {
   "1": {
     image: [
-      "../images/scheint-1.webp",
+      "./images/scheint-1.webp",
       "./images/scheint-2.webp",
       "./images/scheint-3.webp"
     ]
