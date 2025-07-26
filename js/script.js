@@ -89,9 +89,9 @@ const images = {
 
   "2": {
     image: [
-      "../sources/images/scheint-1.png",
-      "../sources/images/scheint-2.png",
-      "../sources/images/scheint-3.png"
+      "../sources/images/nea-1.png",
+      "../sources/images/nea-2.png",
+      "../sources/images/nea-3.png"
     ]
   }
 };
@@ -114,6 +114,33 @@ if (project) {
   featured.style.backgroundSize = "cover";
   featured.style.backgroundRepeat = "no-repeat";
   featured.style.backgroundPosition = "center";
+
+  // Carrusel automático simple
+  const imagesContainer = document.getElementById("projectImages");
+  const projectImages = images[projectId]?.image;
+
+  if (projectImages && projectImages.length > 0) {
+    // Insertar imágenes
+    projectImages.forEach((src, i) => {
+      const img = document.createElement("img");
+      img.src = src;
+      img.alt = `${project.title} - Imagen ${i + 1}`;
+      img.className = i === 0 ? "active" : "";
+      imagesContainer.appendChild(img);
+    });
+
+    // Cambiar imagen activa cada 3 segundos
+    let currentIndex = 0;
+    const imgs = imagesContainer.querySelectorAll("img");
+
+    setInterval(() => {
+      imgs[currentIndex].classList.remove("active");
+      currentIndex = (currentIndex + 1) % imgs.length;
+      imgs[currentIndex].classList.add("active");
+    }, 3000);
+  } else {
+    imagesContainer.textContent = "No hay imágenes disponibles.";
+  }
 
 } else {
   document.getElementById("projectTitle").textContent = "Proyecto no encontrado";

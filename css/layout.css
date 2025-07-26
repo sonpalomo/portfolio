@@ -19,7 +19,7 @@
 
 .Section:nth-child(3) {
 
-    background: rgba(240, 248, 255, 0.497);
+    background: rgba(240, 248, 255, 0);
     background-attachment: fixed;
     background-size:cover;
 
@@ -75,24 +75,36 @@
 
 }
 
-.Section-carousel {
+#projectImages {
+    position: relative;
+    width: 90%;
+    height: 90%;
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 1rem;
-    padding: 1rem 0;
-    scroll-behavior: smooth;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    
   }
   
-  .carousel-img {
-    flex: 0 0 auto;
-    width: 80vw;
-    max-width: 400px;
-    scroll-snap-align: center;
-    border-radius: 10px;
+  #projectImages img {
+    width: 100%;
+    display: none;
     object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease;
+    
+ 
   }
-
+  
+  #projectImages img.active {
+    display: block;
+    position: relative;
+  }
+  
 
 
 @media (min-width: 1140px) {
