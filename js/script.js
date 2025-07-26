@@ -59,7 +59,7 @@ const projects = {
   "1": {
     title: "Mesa Scheint",
     intro: "Diseño de mobiliario organico",
-    background: ["url(../sources/images/scheint-1.webp)"],
+    background: ["url(./images/scheint-1.webp)"],
     info: `
 
                 <div class="Bloque"> 
@@ -85,7 +85,7 @@ const projects = {
   "2": {
     title: "NEA",
     intro: "Diseño Gráfico + Diseño Web",
-    background: ["url(../sources/images/home-nea.webp)",
+    background: ["url(./images/home-nea.webp)",
     ],
 
         info: `
@@ -116,17 +116,17 @@ const projects = {
 const images = {
   "1": {
     image: [
-      "../sources/images/scheint-1.webp",
-      "../sources/images/scheint-2.webp",
-      "../sources/images/scheint-3.webp"
+      "../images/scheint-1.webp",
+      "./images/scheint-2.webp",
+      "./images/scheint-3.webp"
     ]
   },
 
   "2": {
     image: [
-      "../sources/images/home-nea.webp",
-      "../sources/images/nea-2.jpeg",
-      "../sources/images/nea-3.png"
+      "./images/home-nea.webp",
+      "./images/nea-2.jpeg",
+      "./images/nea-3.png"
     ]
   }
 };
