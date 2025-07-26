@@ -109,6 +109,33 @@ const projects = {
                 `
   },
 
+  "3": {
+    title: "Blume Light",
+    intro: "Diseño de mobiliario + CNC",
+    background: ["url(./images/blume-1.webp)",
+    ],
+
+        info: `
+    
+                <div class="Bloque"> 
+                   <h3 class="Bloque-title">Titulo <h3>
+                   <p style="font-weight:300; font-size:1.2rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nemo unde suscipit beatae officiis aspernatur sint vero, reiciendis, eaque corporis placeat non sit adipisci facilis. Est, quasi. Perferendis, enim sint!  </p> 
+                </div>
+
+                 <div class="Bloque"> 
+                   <h3 class="Bloque-title">Titulo <h3>
+                   <p style="font-weight:300; font-size:1.2rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nemo unde suscipit beatae officiis aspernatur sint vero, reiciendis, eaque corporis placeat non sit adipisci facilis. Est, quasi. Perferendis, enim sint!  </p> 
+                </div>
+
+                 <div class="Bloque"> 
+                   <h3 class="Bloque-title">Titulo <h3>
+                   <p style="font-weight:300; font-size:1.2rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nemo unde suscipit beatae officiis aspernatur sint vero, reiciendis, eaque corporis placeat non sit adipisci facilis. Est, quasi. Perferendis, enim sint!  </p> 
+                </div>
+
+                
+                `
+  },
+
 
 
 };
@@ -125,10 +152,21 @@ const images = {
   "2": {
     image: [
       "./images/home-nea.webp",
-      "./images/nea-2.jpeg",
-      "./images/nea-3.png"
+      "./images/nea-2.webp",
+      "./images/nea-3.webp",
+      "./images/nea-4.webp"
     ]
-  }
+  },
+
+  "3": {
+    image: [
+      "./images/blume-1.webp",
+      "./images/blume-2.webp",
+      "./images/blume-3.webp",
+      "./images/blume-4.webp",
+      "./images/blume-5.webp",
+    ]
+  },
 };
 
 

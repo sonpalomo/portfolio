@@ -34,6 +34,12 @@ main{
   
 }
 
+.Grid-item--title{
+    font-family: var(--font-sans);
+    font-weight: 200;
+    padding-top: 24px;
+}
+
 
 .Grid a{
     display:flex;

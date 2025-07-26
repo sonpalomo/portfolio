@@ -1,0 +1,21 @@
+.Section-subtitle{
+    align-self: center ;
+}
+.Container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content:start;
+  
+    margin-bottom: 100px;
+    text-align: justify;
+
+    background-color: var(--light-lemon);
+    padding: 50px;
+
+
+}
+
+.u-bold{
+    font-weight: 500;
+}

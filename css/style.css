@@ -269,14 +269,11 @@ main {
 
     box-shadow: var(--box-shadow);
 
-
 }
 
 
 
 .Section-comun {
-
-
     margin-top: 10rem;
     display: flex;
     flex-direction: column;
@@ -389,7 +386,7 @@ main {
     background-attachment: fixed;
     background-size: cover;
 
-    background: linear-gradient(10deg, rgba(238, 243, 181, 0.605), rgba(197, 153, 255, 0.403));
+    background: linear-gradient(160deg, rgba(238, 243, 181, 0.605), rgba(197, 153, 255, 0.403));
 
 }
 
@@ -399,7 +396,7 @@ main {
     -webkit-backdrop-filter: blur(30px);
     background-attachment: fixed;
     background-size: cover;
-    background: linear-gradient(170deg, rgba(238, 243, 181, 0.605), rgba(197, 153, 255, 0.403));
+    background: linear-gradient(-40deg, rgba(238, 243, 181, 0.605), rgba(197, 153, 255, 0.403));
 
 }
 
@@ -498,7 +495,7 @@ footer {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-family: var(--font-sans);
         font-weight: 100;
         color: var(--basic-black);
@@ -533,7 +530,7 @@ footer {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-family: var(--font-sans);
         font-weight: 100;
         color: var(--basic-black);
