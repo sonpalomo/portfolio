@@ -1,10 +1,13 @@
 
+.Section{
+    position: relative;
+}
 
 .Section:nth-child(2) {
 
     background: rgba(240, 248, 255, 0.302);
-    background-attachment: fixed;
-    background-size:cover;
+    background-size:cover; 
+    height: fit-content;
 
 
 }
@@ -12,8 +15,8 @@
 .Section:nth-child(3) {
 
     background: none;
-    background-attachment: fixed;
     background-size:cover;
+   
 
 }
 
@@ -26,12 +29,13 @@
 
 .Section-title{
     font-size: 78px;
+    color: white;
 }
 
 .Section-subtitle{
     font-size: 24px;
+    color: white;
 }
-
 
 
 .Section--Container{
@@ -43,6 +47,7 @@
 
     align-items: center;
     gap: 50px;
+    
    
 }
 
@@ -50,7 +55,7 @@
 
 .Container-title{
     text-align: center;
-    background-color: antiquewhite;
+
     justify-content: start;
 
     font-family: var(--font-serif);
@@ -111,26 +116,6 @@ font-family: var(--font-serif);
     box-shadow: var(--box-shadow);
 }
 
-/* .Section-tags {
-    display: flex;
-    flex-direction: column;
-
-    gap: 16px;
-
-    margin: 16px;
-
-}
-
-.Tag-item {
-
-    font-family: var(--font-sans);
-    font-style: italic;
-    font-size: 1rem;
-
-   margin-top: 10px;
-
-
-} */
 
 .Container-carousel{
     position: relative;
@@ -167,6 +152,11 @@ font-family: var(--font-serif);
 
 
 @media (min-width: 1140px) {
+
+    .Section{
+        position: sticky;
+    }
+    
 
     .Section-title--wrap{
         font-size: 160px;

@@ -14,8 +14,6 @@
 
 
 .Form {
-
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -31,6 +29,7 @@
 
     border: none;
     border-bottom: solid 1px;
+    border-radius:none ;
     font-family: var(--font-sans);
     font-size: 1rem;
     height: 2rem;
@@ -51,8 +50,6 @@
 .Imagen-perfil {
     opacity: 60%;
     display: flex;
-
-
     justify-content: center;
 }
 
