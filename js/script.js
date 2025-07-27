@@ -63,18 +63,25 @@ const projects = {
     info: `
 
                 <div class="Bloque"> 
-                   <h3 class="Bloque-title">Titulo <h3>
-                   <p style="font-weight:300; font-size:1.2rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nemo unde suscipit beatae officiis aspernatur sint vero, reiciendis, eaque corporis placeat non sit adipisci facilis. Est, quasi. Perferendis, enim sint!  </p> 
+                  
+                   <h3 class="Bloque-title">Inspiración <h3>
+                   <p style="font-weight:300; ">Basada en el diseño orgánico (u organicismo) y en el diseño paramétrico. </p> 
+                   <p style="font-weight:300; ">El mueble adopta carácterísticas de
+                   ambos y se concibe como una pieza simple, bella y con formas orgánicas. </p> 
                 </div>
 
                  <div class="Bloque"> 
-                   <h3 class="Bloque-title">Titulo <h3>
-                   <p style="font-weight:300; font-size:1.2rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nemo unde suscipit beatae officiis aspernatur sint vero, reiciendis, eaque corporis placeat non sit adipisci facilis. Est, quasi. Perferendis, enim sint!  </p> 
+                   <h3 class="Bloque-title">Técnicas<h3>
+                   
+                   <p style="font-weight:300; "> 
+                  El proceso de <strong>diseño y modelación</strong> de la figura se se realizó a través del software de <strong>Rhinoceros-3D.</strong>  </p> 
+                   <p style="font-weight:300;"> 
+                  Para la materialización de este objeto digital en un mueble funcional se utiliza la técnica de corte láser mediante software CNC.</p> 
                 </div>
 
                  <div class="Bloque"> 
-                   <h3 class="Bloque-title">Titulo <h3>
-                   <p style="font-weight:300; font-size:1.2rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nemo unde suscipit beatae officiis aspernatur sint vero, reiciendis, eaque corporis placeat non sit adipisci facilis. Est, quasi. Perferendis, enim sint!  </p> 
+                   <h3 class="Bloque-title">Materiales<h3>
+                   <p style="font-weight:300;">El producto final se compone unicamente de madera mdf. Un material muy versátil por sus características: económico, duradero y con fibras recicladas lo que le hace también respetuoso con el medio ambiente.  </p> 
                 </div>
 
                 
@@ -88,16 +95,17 @@ const projects = {
     background: ["url(./images/home-nea.webp)",
     ],
 
-        info: `
+    info: `
     
                 <div class="Bloque"> 
-                   <h3 class="Bloque-title">Titulo <h3>
-                   <p style="font-weight:300; font-size:1.2rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nemo unde suscipit beatae officiis aspernatur sint vero, reiciendis, eaque corporis placeat non sit adipisci facilis. Est, quasi. Perferendis, enim sint!  </p> 
+                   <h3 class="Bloque-title">Identidad visual <h3>
+                   <p style="font-weight:300; font-size:1.2rem"> COLORES  </p> 
+                  
                 </div>
 
                  <div class="Bloque"> 
-                   <h3 class="Bloque-title">Titulo <h3>
-                   <p style="font-weight:300; font-size:1.2rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nemo unde suscipit beatae officiis aspernatur sint vero, reiciendis, eaque corporis placeat non sit adipisci facilis. Est, quasi. Perferendis, enim sint!  </p> 
+                   <h3 class="Bloque-title">Softwares <h3>
+                   <p style="font-weight:300; font-size:1.2rem"> Prototipado web con Figma previo a presentación final en Wordpress </p> 
                 </div>
 
                  <div class="Bloque"> 
@@ -115,24 +123,30 @@ const projects = {
     background: ["url(./images/blume-1.webp)",
     ],
 
-        info: `
+    info: `
     
-                <div class="Bloque"> 
-                   <h3 class="Bloque-title">Titulo <h3>
-                   <p style="font-weight:300; font-size:1.2rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nemo unde suscipit beatae officiis aspernatur sint vero, reiciendis, eaque corporis placeat non sit adipisci facilis. Est, quasi. Perferendis, enim sint!  </p> 
+                   <div class="Bloque"> 
+                  
+                   <h3 class="Bloque-title">Inspiración <h3>
+                   <p style="font-weight:300; ">Basada en el diseño orgánico (u organicismo) y en el diseño paramétrico. </p> 
+                   <p style="font-weight:300; ">El mueble adopta carácterísticas de
+                   ambos y se concibe como una pieza simple, bella y con formas orgánicas. </p> 
                 </div>
 
                  <div class="Bloque"> 
-                   <h3 class="Bloque-title">Titulo <h3>
-                   <p style="font-weight:300; font-size:1.2rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nemo unde suscipit beatae officiis aspernatur sint vero, reiciendis, eaque corporis placeat non sit adipisci facilis. Est, quasi. Perferendis, enim sint!  </p> 
+                   <h3 class="Bloque-title">Técnicas<h3>
+                   
+                   <p style="font-weight:300; "> 
+                  El proceso de <strong>diseño y modelación</strong> de la figura se se realizó a través del software de <strong>Rhinoceros-3D.</strong>  </p> 
+                   <p style="font-weight:300;"> 
+                  Para la materialización de este objeto digital en un mueble funcional se utiliza la técnica de corte láser mediante software CNC.</p> 
                 </div>
 
                  <div class="Bloque"> 
-                   <h3 class="Bloque-title">Titulo <h3>
-                   <p style="font-weight:300; font-size:1.2rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nemo unde suscipit beatae officiis aspernatur sint vero, reiciendis, eaque corporis placeat non sit adipisci facilis. Est, quasi. Perferendis, enim sint!  </p> 
+                   <h3 class="Bloque-title">Materiales<h3>
+                   <p style="font-weight:300;">El producto final se compone de madera mdf + pie metálico de acero forjado. Un material muy versátil por sus características: económico, duradero y con fibras recicladas lo que le hace también respetuoso con el medio ambiente.  </p> 
                 </div>
 
-                
                 `
   },
 
@@ -145,7 +159,9 @@ const images = {
     image: [
       "./images/scheint-1.webp",
       "./images/scheint-2.webp",
-      "./images/scheint-3.webp"
+      "./images/scheint-3.webp",
+      // "./images/dimension-1.webp",
+      // "./images/dimension-2.webp",
     ]
   },
 
@@ -187,6 +203,8 @@ if (project) {
   featured.style.backgroundSize = "cover";
   featured.style.backgroundRepeat = "no-repeat";
   featured.style.backgroundPosition = "center";
+  featured.style.width = "100%";
+  featured.style.minHeight = "100vh";
 
   // Carrusel automático 
   const imagesContainer = document.getElementById("projectImages");
@@ -202,7 +220,7 @@ if (project) {
       imagesContainer.appendChild(img);
     });
 
-    // Cambiar imagen activa cada 3 segundos
+    // Cambiar imagen active cada 3 segundos
     let currentIndex = 0;
     const imgs = imagesContainer.querySelectorAll("img");
 
@@ -210,7 +228,7 @@ if (project) {
       imgs[currentIndex].classList.remove("active");
       currentIndex = (currentIndex + 1) % imgs.length;
       imgs[currentIndex].classList.add("active");
-    }, 3000);
+    }, 2500);
   } else {
     imagesContainer.textContent = "No hay imágenes disponibles.";
   }
