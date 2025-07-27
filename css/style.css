@@ -14,7 +14,6 @@
     font-weight: 100;
     font-style: italic;
 
-    /* Fonts made by <a href="http://www.webfontfree.com" target="_blank">Web Free Fonts</a> is licensed by <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC 4.0 BY</a> */
 }
 
 @font-face {
@@ -24,7 +23,7 @@
     font-style: normal;
 }
 
-/* animaciones */
+/* Animaciones */
 
 @keyframes slideDown {
     to {
@@ -37,8 +36,6 @@
 :root {
 
     --light-lemon: #fef9e6;
-
-    --sweet-pink: #cecbf4;
     --basic-black: #1e1e1e;
 
     --font-sans: 'Montserrat', sans-serif;

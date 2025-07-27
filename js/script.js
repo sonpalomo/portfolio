@@ -30,7 +30,7 @@ Title.forEach((cadaTitle, i) => {
 });
 
 
-//header blur visible al hacer scroll, if not is hidden
+
 const header = document.querySelector(".Header");
 //header blur siempre visible en layoutproject.html
 const isLayoutProject = document.body.dataset.page === "layoutproject";
@@ -38,6 +38,7 @@ const isLayoutProject = document.body.dataset.page === "layoutproject";
 if (isLayoutProject) {
   header.classList.add("scrolled");
 } else {
+  //header blur visible al hacer scroll, if not is hidden
   window.addEventListener("scroll", () => {
     if (window.scrollY > 5) {
       header.classList.add("scrolled");
@@ -50,11 +51,12 @@ if (isLayoutProject) {
 
 
 // Buscar layoutproject x correspondiente
+// Obtiene el parámetro "project" desde la URL
 
 const parametro = new URLSearchParams(window.location.search);
 const projectId = parametro.get("project");
 
-
+// Objeto que contiene la información de los proyectos
 const projects = {
   "1": {
     title: "Mesa Scheint",
@@ -99,20 +101,15 @@ const projects = {
     
                 <div class="Bloque"> 
                    <h3 class="Bloque-title">Identidad visual <h3>
-                   <p style="font-weight:300; font-size:1.2rem"> COLORES  </p> 
+                   <p style="font-weight:300; font-size:1.2rem">Destacta el contraste entre la elegancia del negro y el verde neón que llama a la acción del usuario y le invita a la acción.   </p> 
                   
                 </div>
 
                  <div class="Bloque"> 
                    <h3 class="Bloque-title">Softwares <h3>
+                   <p style="font-weight:300; font-size:1.2rem"> Identidad Visual con Adobe Illustrator </p>
                    <p style="font-weight:300; font-size:1.2rem"> Prototipado web con Figma previo a presentación final en Wordpress </p> 
                 </div>
-
-                 <div class="Bloque"> 
-                   <h3 class="Bloque-title">Titulo <h3>
-                   <p style="font-weight:300; font-size:1.2rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nemo unde suscipit beatae officiis aspernatur sint vero, reiciendis, eaque corporis placeat non sit adipisci facilis. Est, quasi. Perferendis, enim sint!  </p> 
-                </div>
-
                 
                 `
   },
@@ -154,6 +151,7 @@ const projects = {
 
 };
 
+// Objeto con las imagenes de cada proyecto
 const images = {
   "1": {
     image: [
@@ -188,16 +186,14 @@ const images = {
 
 
 const project = projects[projectId];
-
+//si project existe
 if (project) {
+  //completa el contenido con los datos de project
   document.getElementById("projectTitle").textContent = project.title;
   document.getElementById("projectIntro").textContent = project.intro;
   document.getElementById("projectInfo").innerHTML = project.info;
 
-
-
-  // document.getElementById("projectFeatured").style.backgroundImage= project.background [0];
-
+   // featured image eb el fondo de cada project
   const featured = document.getElementById("projectFeatured");
   featured.style.backgroundImage = project.background[0];
   featured.style.backgroundSize = "cover";
@@ -206,12 +202,12 @@ if (project) {
   featured.style.width = "100%";
   featured.style.minHeight = "100vh";
 
-  // Carrusel automático 
+  // carrusel automático // IA
   const imagesContainer = document.getElementById("projectImages");
   const projectImages = images[projectId]?.image;
 
   if (projectImages && projectImages.length > 0) {
-    // Insertar imágenes
+    // insertar imagenes al DOM
     projectImages.forEach((src, i) => {
       const img = document.createElement("img");
       img.src = src;
@@ -220,7 +216,7 @@ if (project) {
       imagesContainer.appendChild(img);
     });
 
-    // Cambiar imagen active cada 3 segundos
+    // cambiar imagen active cada 3 segundos
     let currentIndex = 0;
     const imgs = imagesContainer.querySelectorAll("img");
 
