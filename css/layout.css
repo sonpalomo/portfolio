@@ -142,7 +142,7 @@ font-family: var(--font-serif);
   }
   
 
-  #projectImages img.active {
+  .Container-carousel img.active {
     display: block;
     position: relative;
   }
